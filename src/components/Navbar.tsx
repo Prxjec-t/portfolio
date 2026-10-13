@@ -16,7 +16,7 @@ const Navbar = () => {
     <header className="fixed top-0 left-0 w-full h-fit z-50 bg-[#5B1111] shadow-md">
       <div className="mx-auto flex items-center justify-between px-5 py-4">
         <a href="/" className="text-xl font-bold text-white cursor-default">
-          Kimi Leminaho
+          PrxjectKL
         </a>
         <button
           className="text-2xl md:hidden"
