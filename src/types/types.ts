@@ -6,3 +6,13 @@ export type Skill = {
   icon: IconType;
   iconColor?: string;
 };
+
+export type Projects = {
+  id: string;
+  title: string;
+  description: string;
+  technologies: string[];
+  image: string;
+  github: string;
+  liveLink?: string;
+};
