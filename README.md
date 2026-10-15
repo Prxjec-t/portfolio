@@ -29,3 +29,5 @@ npm run dev
 ### Design länk
 
 [Figma skiss på portfolion](https://www.figma.com/design/s9DKbLf9C6TnTJsdpZJRKB/Portfolio?node-id=0-1&t=8aCmLDa0DA03GKEY-1)
+
+Slut produktionen ser lite annorlunda ut i vissa kanter jämfört med skissen då under produktion upptäcktes andra design val och man fick lite idé sprutar!
