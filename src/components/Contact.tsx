@@ -2,12 +2,10 @@ const Contact = () => {
   return (
     <section id="contact" className="pt-15 lg:pt-30 text-center pb-20">
       <div className="flex justify-center">
-        <h2 className="text-white font-bold text-xl border border-2 w-5/10 md:w-3/10 lg:w-2/10 py-2">
-          Connect with me!
-        </h2>
+        <h2 className="text-white font-bold text-xl border-2 w-5/10 md:w-3/10 lg:w-2/10 py-2">Connect with me!</h2>
       </div>
 
-      <div className="bg-[#765353] w-7/8 lg:w-3/8 gap-2 mt-4 mx-auto p-5 flex flex-col items-start font-medium text-white text-lg border border-10 border-[#5B1111]">
+      <div className="bg-[#765353] w-7/8 lg:w-3/8 gap-2 mt-4 mx-auto p-5 flex flex-col items-start font-medium text-white text-lg border-10 border-[#5B1111]">
         <p className="">
           Email:{' '}
           <a href="mailto:kimi.piilola@gmail.com" className="text-blue-400 hover:text-blue-800">
