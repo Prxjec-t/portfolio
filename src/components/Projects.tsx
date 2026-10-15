@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { projectsData } from '../data/projects';
 import ProjectsCard from './Cards/ProjectCard';
 import FilterProjects from './FilterProjects';
+import { motion } from 'motion/react';
 
 const techs = Array.from(new Set(projectsData.flatMap((project) => project.technologies))).sort();
 
@@ -34,7 +35,17 @@ const Projects = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-7">
           {FilteredProjects.map((Project) => (
-            <ProjectsCard key={Project.id} project={Project} />
+            <motion.div
+              key={Project.id}
+              layout
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              whileHover={{ scale: 1.025, transition: { duration: 0.15, ease: 'easeOut' } }}
+              exit={{ opacity: 0, scale: 0.9 }}
+              transition={{ duration: 0.3 }}>
+              <ProjectsCard project={Project} />
+            </motion.div>
           ))}
         </div>
 
