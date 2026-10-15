@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import hamburgerLight from '../assets/hamburgerLight.svg';
-import closeLight from '../assets/closeLight.svg';
+import hamburger from '../assets/hamburger.svg';
+import close from '../assets/close.svg';
 
 const links = [
   { label: 'Home', href: '#home' },
@@ -24,9 +24,9 @@ const Navbar = () => {
           aria-label="Toggle navigation"
           aria-expanded={isOpen}>
           {isOpen ? (
-            <img src={closeLight} alt="Close" className="size-10" />
+            <img src={close} alt="Close" className="size-10" />
           ) : (
-            <img src={hamburgerLight} alt="Menu" className="size-10" />
+            <img src={hamburger} alt="Menu" className="size-10" />
           )}
         </button>
 
