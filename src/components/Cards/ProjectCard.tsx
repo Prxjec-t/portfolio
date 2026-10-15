@@ -16,11 +16,11 @@ const ProjectsCard = ({ project }: ProjectCardProps) => {
         <div className="p-3">
           <p className="text-center leading-relaxed text-l"> {description} </p>
 
-          <ul className="flex py-3 gap-2 justify-center">
+          <ul className="flex flex-wrap xl:flex-nowrap py-3 gap-2 justify-center">
             {technologies.map((tech) => (
               <li
                 key={tech}
-                className="rounded-full w-1/8 py-1 text-center bg-[#5B1111] transition-colors hover:text-gray-400 hover:bg-[#5B1111]/70 cursor-default">
+                className="rounded-full w-3/8 2xl:w-1/8 py-1 text-center bg-[#5B1111] transition-colors hover:text-gray-400 hover:bg-[#5B1111]/70 cursor-default">
                 {tech}
               </li>
             ))}
