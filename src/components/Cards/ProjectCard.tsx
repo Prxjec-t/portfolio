@@ -9,7 +9,7 @@ const ProjectsCard = ({ project }: ProjectCardProps) => {
 
   return (
     <article className="overflow-hidden rounded-xl text-base md:text-xl xl:text-base bg-[#5C5353] flex items-center justify-center pt-2">
-      <div className="w-9/10">
+      <div className="w-9/10 p-5">
         <h3 className="text-center font-bold text-2xl pb-4">{title}</h3>
         <a href={github} target="_blank" rel="noreferrer">
           <img src={image} alt={`Screenshot of ${title}`} loading="lazy" className="rounded-2xl shadow-md" />
