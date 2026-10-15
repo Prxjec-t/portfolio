@@ -41,7 +41,11 @@ const Projects = () => {
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              whileHover={{ scale: 1.025, transition: { duration: 0.15, ease: 'easeOut' } }}
+              whileHover={{
+                scale: 1.025,
+                transition: { duration: 0.15, ease: 'easeOut' },
+                boxShadow: '0px 10px 25px rgba(0, 0, 0, 0.2)',
+              }}
               exit={{ opacity: 0, scale: 0.9 }}
               transition={{ duration: 0.3 }}>
               <ProjectsCard project={Project} />
