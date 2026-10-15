@@ -1,5 +1,6 @@
 import SkillsCard from './Cards/SkillsCard';
 import { skillsData } from '../data/skills';
+import { motion } from 'motion/react';
 
 const About = () => {
   return (
@@ -27,7 +28,14 @@ const About = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {skillsData.map((Skill) => (
-              <SkillsCard key={Skill.id} skill={Skill} />
+              <motion.div
+                key={Skill.id}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true, amount: 0.8 }}
+                transition={{ duration: 1.5, ease: 'easeInOut' }}>
+                <SkillsCard skill={Skill} />
+              </motion.div>
             ))}
           </div>
         </div>
