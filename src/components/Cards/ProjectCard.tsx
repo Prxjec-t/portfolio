@@ -11,7 +11,9 @@ const ProjectsCard = ({ project }: ProjectCardProps) => {
     <article className="overflow-hidden rounded-xl text-base md:text-xl xl:text-base bg-[#5C5353] flex items-center justify-center pt-2">
       <div className="w-9/10">
         <h3 className="text-center font-bold text-2xl pb-4">{title}</h3>
-        <img src={image} alt={`Screenshot of ${title}`} loading="lazy" className="rounded-2xl shadow-md" />
+        <a href={github} target="_blank" rel="noreferrer">
+          <img src={image} alt={`Screenshot of ${title}`} loading="lazy" className="rounded-2xl shadow-md" />
+        </a>
 
         <div className="p-3">
           <p className="text-center leading-relaxed text-l"> {description} </p>
